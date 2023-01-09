@@ -6,6 +6,7 @@
     --primary-brand-color: #4D5AE5;
     --light-color: #F4F4FD;
     --accent-color: #E7E9FC;
+    --white-color: #ffffff;
 }
 
 .list {
@@ -15,13 +16,6 @@
 .link {
     text-decoration: none;
 }
-
-.body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-}
-
-
 
 /* Componetns */
 
@@ -34,10 +28,10 @@
 }
 
 .bg-white {
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 
-.title {
+.subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -45,7 +39,7 @@
     color: var(--dark-color);
 }
 
-.subtitle {
+.description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -59,21 +53,33 @@
     letter-spacing: 0.04em;
     background: var(--primary-brand-color);
     cursor: pointer;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .btn:hover,
 .btn:focus {
     background: var(--pressed-color);
 }
+
+.btn-filter {
+    background: var(--light-color);
+    color: var(--primary-brand-color);
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background: var(--pressed-color);
+    color: var(--white-color);
+}
+
 /* Componetns */
 
 /* Logo */
 .logo {
     font-family: 'Raleway', sans-serif;
         font-weight: 800;
-        font-size: 0.75;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 1.33;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--primary-brand-color);
@@ -101,7 +107,6 @@
 
 .menu-link {     
         font-weight: 500;
-        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--dark-color);
@@ -114,9 +119,8 @@
     color: var(--pressed-color);
 }
 
-.contact-mail {
+.contact-link {
         font-style: normal;
-        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
@@ -125,14 +129,6 @@
 .contact-mail:hover,
 .contact-mail:focus {
     color: var(--pressed-color);
-}
-
-.contact-phone-number {
-        font-style: normal;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--text-color);
 }
 
 .contact-phone-number:hover,
@@ -150,19 +146,17 @@
 
 /* Hero */
 .hero-title {
-        font-weight: 700;
         font-size: 56px;
         line-height: 1.0;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #ffffff;
+        color: var(--white-color);
 }
 
 
 .section-title {
-        font-weight: 700;
         font-size: 36px;
-        line-height: 40px;
+        line-height: 1.1;
         text-transform: capitalize;
         color: var(--dark-color);
 }
@@ -170,7 +164,6 @@
 /* Footer */
 
 .footer-description {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
